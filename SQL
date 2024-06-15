@@ -1,0 +1,39 @@
+# You have to Create a DATABASE AND TABLE
+
+
+def create_db():
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="Aftab@786"
+    )
+    cursor = connection.cursor()
+    cursor.execute("CREATE DATABASE IF NOT EXISTS PROJECTS")
+    connection.commit()
+    connection.close()
+
+def create_table():
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="Aftab@786",
+        database="PROJECTS"
+    )
+    cursor = connection.cursor()
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS STUDENT_DETAILS(
+        Registration_No INT PRIMARY KEY,
+        Name VARCHAR(20),
+        DOB VARCHAR(20),
+        Gender VARCHAR(8),
+        Class VARCHAR(20),
+        Religion VARCHAR(12),
+        Skill VARCHAR(20),
+        Father_name VARCHAR(20),
+        Mother_name VARCHAR(20),
+        Father_Occupation VARCHAR(20),
+        Mother_Occupation VARCHAR(20)
+    )
+    """)
+    connection.commit()
+    connection.close()
