@@ -16,7 +16,8 @@ This is a simple student registration system built using Python and Tkinter. It 
 - Tkinter
 - Pillow (PIL)
 - MySQL Connector
-
+- SQL
+  This project is needed to create the database and table . to See the [SQL](SQL) file for details.
 ## Installation
 
 1. Clone the repository:
