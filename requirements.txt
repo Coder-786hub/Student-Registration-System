@@ -1,0 +1,4 @@
+- Python 3.x
+- Tkinter
+- Pillow (PIL)
+- MySQL Connector
