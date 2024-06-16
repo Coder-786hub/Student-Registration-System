@@ -22,7 +22,7 @@ This is a simple student registration system built using Python and Tkinter. It 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/student-registration-system.git
+    git clone https://github.com/Coder-786hub/student-registration-system.git
     ```
 
 2. Install the required Python packages:
